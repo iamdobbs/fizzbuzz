@@ -1,11 +1,6 @@
 def fizzbuzz(number)
-  if (number % 15).zero?
-    "FizzBuzz"
-  elsif (number % 3).zero?
-    "Fizz"
-  elsif (number % 5).zero?
-    "Buzz"
-  else
-    number.to_s
-  end
+  result = ""
+  result << "Fizz" if (number % 3).zero?
+  result << "Buzz" if (number % 5).zero?
+  result.empty? ? number.to_s : result
 end
