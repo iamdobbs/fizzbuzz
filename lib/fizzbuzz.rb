@@ -1,5 +1,7 @@
 def fizzbuzz(number)
   case number
+  when 1
+    "1"
   when 3
     "fizz"
   when 5
